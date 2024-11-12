@@ -41,3 +41,23 @@
 
 </body>  <!-- This ends the content of the page -->
 </html>  <!-- This ends the HTML document -->
+
+# trivia quiz
+<section>
+  <h2>Trivia Challenge</h2>
+  <p>Question: How much did medieval knight’s armor typically weigh?</p>
+  <input type="text" id="answer" placeholder="Enter your answer">
+  <button onclick="checkAnswer()">Submit</button>
+  <p id="triviaResponse"></p>
+</section>
+
+<script>
+  function checkAnswer() {
+    const answer = document.getElementById("answer").value;
+    const correctAnswer = "60 pounds";
+    const response = answer === correctAnswer 
+      ? "Correct! Knights wore heavy armor."
+      : "Try again!";
+    document.getElementById("triviaResponse").innerText = response;
+  }
+</script>
