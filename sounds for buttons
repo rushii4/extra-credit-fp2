@@ -17,8 +17,7 @@ This setup makes it interactive, so each time you click a button, a chime plays.
   <button onclick="playSound('click2')">Button 2</button>
 
   <!-- Audio elements with online sound file URLs -->
-  <audio id="click1" src="https://pixabay.com/sound-effects/clock-chime-121108.mp3"></audio>
-  <audio id="click2" src="https://pixabay.com/sound-effects/clock-chime-121108.mp3"></audio>
+  <audio id="soundPlayer" preload="auto"></audio>
 
   <script>
     // Function to play sound based on button ID
